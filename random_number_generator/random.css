@@ -1,0 +1,15 @@
+*{
+    background-color: pink;
+}
+button{
+    background-color: bisque;
+    color: black;
+    font-size: 50px;
+    display: block;
+    margin: 20px auto;
+}
+.randomnum{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+}

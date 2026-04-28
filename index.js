@@ -1,10 +1,16 @@
 // console.log(`hello`)
+
 // window.alert(`this is an alert`)
+
 // this is a comment
+
 // document.getElementById(`myh1`).textContent="hellow"
+
+
 //variable
 //description let x;
 //assignment x=100;
+
 //numbers
 // let age=122;
 // let price=3;
@@ -35,7 +41,6 @@
 // let fullName="Bro Code"
 // let age=25;
 // let isStudent=faslse;
-
 // document.getElementById("p1").textContent=`your name is ${fullName}`;
 // document.getElementById("p2").textContent=`your age is ${age}`;
 // document.getElementById("p3").textContent=`Enrolled :${isStudent}`;
@@ -49,38 +54,41 @@
 // student=student**2;
 // student=student%2;
 //using agumented assignment operators
-students+=1;
-students-=1;
-students*=2;
-students/=2;
-students**=2;
+// students+=1;
+// students-=1;
+// students*=2;
+// students/=2;
+// students**=2;
 
-
-student++; //increment operator
-student--; //decrement operator 
+// student++; //increment operator
+// student--; //decrement operator 
 // console.log(student);
-/*operation precedence
-1.parenthesis()
-2.exponents
-3.multiplication and deivision and modulo
-4.addition and subtraction
-*/
+
+// operation precedence
+// 1.parenthesis()
+// 2.exponents
+// 3.multiplication and deivision and modulo
+// 4.addition and subtraction
+
 // let result=1+2*3+4**16;
 // console.log(result);
 
 //how to accept user input
 //1.easy way is window prompt
-//2.professional way =html textbox
+//2.professional way ia html textbox
 
 // let username;
 // username=window.prompt("whats your username?");
 // console.log(username);
-// let username;
 
+
+// let username;
 // document.getElementById("mysubmit").onclick=function(){
 //     username=document.getElementById("mytext").value;
 //     document.getElementsById("myh1").textContent='hello $(username)';
 // }
+
+
 //TYPE CONVERSION=change te datatype of a value to amather
 // let age=window.prompt("how old are you?");  //takes as string
 // age=Number(age);
@@ -129,3 +137,104 @@ student--; //decrement operator
 //     cicumference=2*PI*radius;
 //     document.getElementsById("myh3").textContent= circumference+"cm";
 // }
+
+//Math built in objects
+// Math.PI
+// concole.log(Math.E);
+// concole.log(Math.PI);
+
+
+// let x=3.21;
+// let y=3.6;
+// let u=-3.5;
+// z=Math.round(x);
+// w=Math.floor(y);
+// e=Math.ceil(x)
+// t=Math.trunc(y);
+// z=Math.pow(x,y);
+// a=Math.sqrt(x);
+// c=Math.log(x);
+// o=Math.sin(x);
+// v=Math.abs(u);
+// s=Math.sign(u);
+// let max=Math.max(x,y,u);
+// let max=Math.min(x,y,u);
+
+// //to genartre a random number
+// let randomnum=Math.floor(Math.random()*6)+1;
+// console.log(randomnum);
+
+// const min=50;
+// const max=100;
+// let randomnum=Math.floor(Math.random()*max)+min;
+
+
+//IF STATEMENTS =if a condition is true,execute some code
+//               if not ,do somrthing else
+// let age=25;
+// if (age >=18){
+//     console.log("you are old");
+// }
+// else{
+//     console.log("you are not old");
+// }
+
+// let time=9;
+// if (time < 12){
+//     console.log("good morning babs!");
+// }
+// else{
+//     console.log("good afternoon babs!");
+// }
+
+
+// let isStudent=false;
+// if (isStudent){
+//     console.log("you are a student");
+// }
+// else{
+//     console.log("you are not a student");
+// }
+
+
+//nested if
+// let age=25;
+// let hasLicense=false;
+// if (age>=16){
+//     console.log("you are old enough to drive");
+//     if(hasLicense){
+//         console.log("he has license");
+//     }
+//     else{
+//         console.log("he dont have license yet");
+//     }
+// }
+// else{
+//     console.log("you are not old enough to drive");
+// }
+
+
+// const myText=document.getElementById("myText");
+// const mySubmit=document.getElementById("mySubmit");
+// const resultElement=document.getElementById("resultElement");
+// mySubmit.onclick=function(){
+//     if (age>=100){
+//         resultElement.textContent="you are too old to enter this site";
+//     }
+//     else if (age==0){
+//         resultElement.textContent="you are just born,go to sleep";
+//     }
+//     else if (age<0){
+//         resultElement.textContent="your age cant be below zero,are you an aliean?";
+//     }
+//     else{
+//         resultElement.textContent="you are not old enough to this site";
+//     }
+// }
+
+
+//checeked property in js
+//.checked=property that determines the checked state of an HTML chekbox or radio button elemnt
+
+
+
