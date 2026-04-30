@@ -267,5 +267,180 @@
 //ternary opeartion of js=a shortcut to if{} and else{} statements helps to assign based on a condition 
 //condition? codeTfTrue:codeIfFalse
 
-let age=20;
-age>18?"you are adult":"you are child";
+// let age=20;
+// age>18?"you are adult":"you are child";
+// console.log(message);
+
+// let time=16;
+// let greeting=time<12?"good morning":"good afternoon"
+// console.log(greeting);
+
+// let isStudent=true;
+// let message=isStudent?"you are a student":"you are not a student"
+// console.log(message);
+
+// let purchase=125;
+// let discount=paschase>= 100 ? 10 : 0;
+// console.log(`your total is $${purchase-purchase*(disocunt)}`);
+
+// //switch=can be an efficent replacement for many else if stataements
+// let day=1;
+// if(day==1){
+//     console.log(`it is monday`)
+// }
+// if(day==2){
+//     console.log(`it is tuesday`)
+// }
+// if(day==3){
+//     console.log(`it is wednesday`)
+// }
+// if(day==4){
+//     console.log(`it is thursday`)
+// }
+// if(day==5){
+//     console.log(`it is friday`)
+// }
+// if(day==6){
+//     console.log(`it is saturay`)
+// }
+// if(day==7){
+//     console.log(`it is sunday`)
+// }
+// else{
+//     console.log(`invalid`)
+// }
+
+//using switch
+// let day=1;
+// switch(day){
+//     case 1:
+//         console.log(`it is monday`);
+//         break;
+//     case 2:
+//         console.log(`it is tuesday`);
+//         break;
+//     case 3:
+//         console.log(`it is wednesday`);
+//         break;
+//     case 4:
+//         console.log(`it is thursday`);
+//         break;
+//     case 5:
+//         console.log(`it is friday`);
+//         break;
+//     case 6:
+//         console.log(`it is saturday`);
+//         break;
+//     case 7:
+//         console.log(`it is aunday`);
+//         break;
+//     default:
+//         console.log(`invalid data`);
+// }
+
+//string methods=allow you to manupulate and work with text(strings)
+// let userName="sneha";
+// console.log(userName.charAt(0));
+// console.log(userName.indexOf("s"));
+// console.log(userName.length);
+
+// userName=userName.trim();
+// console.log(userName);
+
+
+// userName=userName.toUpperCase();
+// console.log(userName);
+
+
+// userName=userName.toLowerCase();
+// console.log(userName);
+
+
+// userName=userName.repeat(3);
+// console.log(userName);
+
+// let result=userName.startsWith("s");
+// console.log(result);
+// let results=userName.endsWith("s");
+// console.log(results);
+
+// let phoneNumber=`123-456-7890`;
+// phoneNumber=phoneNumber.replaceAll("-","");
+// console.log(phoneNumber);
+
+// let phoneNumbers=`123-456-7890`;
+// phoneNumbers=phoneNumbers.padStart(15,"0");
+// console.log(phoneNumbers);
+
+// let phoneNumbe=`123-456-7890`;
+// phoneNumbe=phoneNumbe.padEnd(15,"0");
+// console.log(phoneNumbe);
+
+
+//string slciing in js=creating a substring from a portion of anather string
+//string.slice(start,end)
+// const fullName="bro code";
+// let firstName=fullName.slice(0,3);
+// let lastName=fullName.slice(4,8);
+// console.log(firstName);
+// console.log(lastName);
+
+// const fullName="broseph code";
+// let firstName=fullName.slice(0,fullName.indexOf(" "));
+// let lastName=fullName.slice(fullName.indexOf(" "));
+// console.log(firstName);
+// console.log(lastName);
+
+// const email="snehasathi100@gmail.com";
+// let username=email.slice(0,email.indexOf("@"));
+// let extension=email.slice(email.indexOf("@")+1);
+// console.log(username);
+// console.log(extension);
+
+//method changing=calling one medthod after anather in one continuous line of code
+//no method changing
+// let username=window.prompt("enter your username:");
+
+// username=username.trim();
+
+// let letter=username.charAt(0);
+// letter=letter.toUpperCase();
+
+// let extraChars=username.slice(1);
+// extraChars=extraChars.toLowerCase();
+
+// username=letter+extraChars;
+
+// console.log(username);
+
+
+//method changing
+// let username=window.prompt("enter your username:");
+// username=username.trim().charAt(0).toUpperCase()+username.trim().slice(1).toLowerCase();
+// console.log(username);
+
+//logical operators=used to combine or manipulate boolean values(true ir false)
+// AND=&&
+// OR=||
+// NOT=!
+
+// const temp = 20;
+// if (temp>0 ||temp<=30){
+//     console.log("the weather is good");
+// }
+// else{
+//     console.log("the weather is bad")
+// }
+// const isSunny=true;
+// if (!isSunny){
+//     console.log("it is not sunny")
+// }
+// else{
+//     console.log("it is not cloudy")
+// }
+
+//= assignment operator
+//== comparision operator(compares if values are equal)
+// === strcit equality operator(compares if values and datatypes are equal)
+// != inequality operator
+// !== strictly inequality operator
