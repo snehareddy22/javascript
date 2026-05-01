@@ -443,4 +443,76 @@
 //== comparision operator(compares if values are equal)
 // === strcit equality operator(compares if values and datatypes are equal)
 // != inequality operator
-// !== strictly inequality operator
+// !== strictly inequality operatory
+
+// const PI=3.14;
+// if (PI=="3.14"){   //(PI==="3.14") this is not a PI
+//     console.log("this is a PI");
+// }
+// else{
+//     console.log("this is not a PI");
+// }
+
+// const PI=3.14;
+// if (PI!="3.14"){   //(PI!=="3.14") this is not a PI
+//     console.log("this is not a PI");
+// }
+// else{
+//     console.log("this is a PI");
+// }
+
+//while loop=repeat some code while some condition is true
+// let usernmae="";
+// while(username == ""){
+//     username=window.prompt(`enter your peru`);
+// }
+// console.log(`hello ${username}`);
+
+// let loggedin=false;
+// let username;
+// let password;
+// while(!loggedin){
+//     username=window.prompt(`enter the username`);
+//     password=window.prompt(`enter the password`);
+//     if (username === "myusername"&& password ==="mypasword")
+//         console.log("you are loggedin");
+//     else{
+//         console.log("invalid credentials,try again")
+//     }
+// }
+
+//for loop =repeat some code a limited amount of times
+// for (let i=0;i<=2;i++ ){
+//     console.log("hellow")
+// }
+// for (let i=0;i<=2;i++ ){
+//     console.log("i")
+// }
+// for (let i=1;i<=20;i++){
+//     if(i==13){
+//         continue;
+//     }
+//     else{
+//         console.log(i);
+//     }
+// }
+// for (let i=1;i<=20;i++){
+//     if(i==13){
+//         break;
+//     }
+//     else{
+//         console.log(i);
+//     }
+// }
+
+//function in js=a section of reusable code.
+// declare code oncuechange,use it whenever needed.
+// call the function to execute that code
+
+function add(x,y){
+    return x+y;
+}
+function subtract(x,y){
+    return x-y;
+}
+console.log(add(2,3));
