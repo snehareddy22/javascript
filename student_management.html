@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Grade Calculator</title>
+</head>
+<body>
+
+<script>
+
+    let student_name = 'Sakhi';
+
+    let Maths = 85;
+    let Science = 90;
+    let English = 78;
+    let Art = 88;
+    let Computer = 95;
+
+    // Calculate total marks
+    const total_marks = function() {
+        return Maths + Science + English + Art + Computer;
+    };
+
+    // Calculate average
+    const average_marks = function() {
+        return total_marks() / 5;
+    };
+
+    // Calculate percentage
+    const percentage = function() {
+        return (total_marks() / 500) * 100;
+    };
+
+    // Calculate grade
+    const grade = function() {
+
+        let marks = percentage();
+
+        if (marks >= 90) {
+            return 'A+';
+        }
+        else if (marks >= 80) {
+            return 'A';
+        }
+        else if (marks >= 70) {
+            return 'B';
+        }
+        else if (marks >= 60) {
+            return 'C';
+        }
+        else if (marks >= 50) {
+            return 'D';
+        }
+        else {
+            return 'F';
+        }
+    };
+
+    // Check pass or fail
+    const results = function() {
+
+        if (grade() === 'F') {
+            return 'FAIL';
+        }
+        else {
+            return 'PASS';
+        }
+    };
+
+    // Generate student report
+    const report = function() {
+
+        console.log(`Student Name: ${student_name}`);
+
+        console.log('---------- SCORES ----------');
+
+        console.log(`Maths: ${Maths}`);
+        console.log(`Science: ${Science}`);
+        console.log(`English: ${English}`);
+        console.log(`Art: ${Art}`);
+        console.log(`Computer: ${Computer}`);
+
+        console.log('---------- RESULTS ----------');
+
+        console.log(`Total Marks: ${total_marks()}`);
+        console.log(`Average: ${average_marks()}`);
+        console.log(`Percentage: ${percentage()}%`);
+        console.log(`Grade: ${grade()}`);
+        console.log(`Result: ${results()}`);
+
+    };
+
+    // Execute the report
+    report();
+
+</script>
+
+</body>
+</html>
+
