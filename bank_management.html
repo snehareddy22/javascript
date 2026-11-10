@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank Account Management</title>
+</head>
+<body>
+
+<script>
+
+const bankAccount = {
+
+    accountHolder: "Sakhi",
+
+    accountNumber: 123456789,
+
+    balance: 10000,
+
+    isActive: true,
+
+    transactions: [],
+
+    address: {
+        city: "Hyderabad",
+        state: "Telangana"
+    },
+
+    // 1. Check account status
+    checkAccountStatus: function() {
+
+        if (this.isActive === true) {
+            return "Active";
+        } else {
+            return "Inactive";
+        }
+
+    },
+
+    // 2. Check balance
+    checkBalance: function() {
+
+        return this.balance;
+
+    },
+
+    // 3. Generate transaction ID
+    generateTransactionId: function() {
+
+        return Math.floor(Math.random() * 90000) + 10000;
+
+    },
+
+    // 4. Deposit money
+    deposit: function(amount) {
+
+        if (!this.isActive) {
+            return "Account is inactive";
+        }
+
+        if (amount <= 0) {
+            return "Enter a valid amount";
+        }
+
+        this.balance += amount;
+
+        this.transactions.push({
+
+            transactionId: this.generateTransactionId(),
+
+            type: "DEPOSIT",
+
+            amount: amount,
+
+            balanceAfterTransaction: this.balance
+
+        });
+
+        return "Deposit successful!";
+
+    },
+
+    // 5. Withdraw money
+    withdraw: function(amount) {
+
+        if (!this.isActive) {
+            return "Account is inactive";
+        }
+
+        if (amount <= 0) {
+            return "Enter a valid amount";
+        }
+
+        if (this.balance - amount < 500) {
+            return "Insufficient balance. Minimum ₹500 must remain.";
+        }
+
+        this.balance -= amount;
+
+        this.transactions.push({
+
+            transactionId: this.generateTransactionId(),
+
+            type: "WITHDRAWAL",
+
+            amount: amount,
+
+            balanceAfterTransaction: this.balance
+
+        });
+
+        return "Withdrawal successful!";
+
+    },
+
+    // 6. Account details
+    getAccountDetails: function() {
+
+        return {
+            accountHolder: this.accountHolder,
+            accountNumber: this.accountNumber,
+            balance: this.balance,
+            status: this.checkAccountStatus(),
+            address: this.address
+        };
+
+    },
+
+    // 7. Transaction history
+    getTransactionHistory: function() {
+
+        return this.transactions;
+
+    },
+
+    // 8. Total deposited money
+    getTotalDeposits: function() {
+
+        let total = 0;
+
+        for (const transaction of this.transactions) {
+
+            if (transaction.type === "DEPOSIT") {
+                total += transaction.amount;
+            }
+
+        }
+
+        return total;
+
+    },
+
+    // 9. Total withdrawn money
+    getTotalWithdrawals: function() {
+
+        let total = 0;
+
+        for (const transaction of this.transactions) {
+
+            if (transaction.type === "WITHDRAWAL") {
+                total += transaction.amount;
+            }
+
+        }
+
+        return total;
+
+    }
+
+};
+
+
+// TESTING
+
+console.log(bankAccount.getAccountDetails());
+
+console.log(bankAccount.deposit(2000));
+
+console.log(bankAccount.withdraw(3000));
+
+console.log(bankAccount.deposit(500));
+
+console.log("Current Balance:", bankAccount.checkBalance());
+
+console.log("Transaction History:", bankAccount.getTransactionHistory());
+
+console.log("Total Deposits:", bankAccount.getTotalDeposits());
+
+console.log("Total Withdrawals:", bankAccount.getTotalWithdrawals());
+
+</script>
+
+</body>
+</html>
